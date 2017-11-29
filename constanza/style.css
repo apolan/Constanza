@@ -1,0 +1,138 @@
+/*
+ Theme Name:   Atlas Colecction
+ Description:  Atlas Colecction Theme
+ Author:       apolanworks
+ Template:     atlas-coleccion
+ Version:      1.0
+ Tags:         Bootstrap, Atlas
+See:
+*/
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+                                               M E N U
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+                                               F O O T E R
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+                                               S E C T I O N S
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+                                               T E X T
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@import url("./css/colors.css");
+@import url("./css/menu.css");
+@import url("./css/footer.css");
+@import url("./css/index.css");
+@import url("./css/page.css");
+@import url("./css/graph.css");
+@import url("./css/animationNeon1.css");
+
+
+
+
+body {
+    background: black;	
+}
+
+.center{
+    display: flex;
+    align-items: center;
+}
+
+
+.row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.neon-1{
+    -webkit-animation: neon3 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon3 1.5s ease-in-out infinite alternate;
+    animation: neon3 1.5s ease-in-out infinite alternate;
+}
+
+.neon-2{
+    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+.neon-3{
+    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+.neon-6{
+    -webkit-animation: neon6 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon6 1.5s ease-in-out infinite alternate;
+    animation: neon6 1.5s ease-in-out infinite alternate;
+}
+
+.neonwhite{
+    -webkit-animation: neonwhite 1.5s ease-in-out infinite alternate;
+    -moz-animation: neonwhite 1.5s ease-in-out infinite alternate;
+    animation: neonwhite 1.5s ease-in-out infinite alternate;
+}
+
+
+
+
+
+#section-ad-1 {
+  /* Prevent vertical gaps */
+  line-height: 0;
+   
+  -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         8;
+  column-gap:           0px;  
+}
+
+#section-ad-1 img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 1200px) {
+  #section-ad-1 {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #section-ad-1 {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #section-ad-1 {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #section-ad-1 {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}

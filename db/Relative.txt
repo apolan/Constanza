@@ -1,0 +1,70 @@
+SELECT * FROM wp_atlas.wp_relation;
+
+SELECT * FROM wp_atlas.wp_persona;
+SELECT * FROM wp_atlas.wp_dueno;
+
+SELECT * FROM wp_atlas.wp_node;
+SELECT * FROM wp_atlas.wp_actividad;
+SELECT * FROM wp_atlas.wp_lugar;
+
+
+delete FROM wp_atlas.wp_persona;
+delete FROM wp_atlas.wp_relation;
+delete FROM wp_atlas.wp_node;
+delete FROM wp_atlas.wp_actividad;
+delete FROM wp_atlas.wp_dueno;
+delete FROM wp_atlas.wp_lugar;
+
+
+delete FROM wp_atlas.wp_dueno where correo like 'dummy%';
+
+SELECT SUBSTRING_INDEX(ew|profesion, "|", -1) FROM wp_atlas.wp_persona ew ;
+
+INSERT INTO `wp_atlas`.`wp_node`
+(
+`actividad`,
+`profesion`,
+`lugar`,
+`type`,
+`dueno`,
+`size`,
+`personas`,
+`dt_creacion`)
+VALUES
+(
+"Actividad 4",
+"",
+"mi casa",
+"Actividad",
+"Andrés Polanía",
+12,
+"Andrea|Cocinera1_maria|Cocinera2_Andrea 2|Cocinera3_Carla|Cocinera4_Camila|Cocinera5_Susana|Cocinera6_",
+'2017-11-12 14:41:09'
+);
+
+
+		SELECT
+			name
+
+		FROM `wp_atlas`.`wp_actividad`
+--		WHERE date(new.dt_creacion) = date(dt_creacion)
+		AND new.dt_creacion <>dt_creacion
+		ORDER by dt_creacion
+		desc limit 1;
+        
+        select date('2017-11-11 14:41:09');
+        
+        
+        UPDATE  `wp_atlas`.`wp_actividad` up
+			set up.size = up.size + 10
+			WHERE name = 'Actividad 1' ;
+            
+            
+            
+            SELECT
+			name
+            FROM `wp_atlas`.`wp_actividad`
+		WHERE date('2017-11-11 21:01:35') = date(dt_creacion)
+		AND '2017-11-11 21:01:35' <> dt_creacion
+		ORDER by dt_creacion
+		desc limit 1;
